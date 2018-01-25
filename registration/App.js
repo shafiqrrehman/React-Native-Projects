@@ -1,12 +1,14 @@
 import React from 'react';
 import MainPage from './Main';
 import Signin from './Signin';
+import Donor from './Donor';
 
 export default class App extends React.Component {
   render() {
     return (
       // <MainPage />
-      <Signin />
+      // <Signin />
+      <Donor />
     );
   }
 }

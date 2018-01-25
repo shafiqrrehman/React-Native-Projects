@@ -94,7 +94,6 @@ const styles = StyleSheet.create({
     //   },
     btnWrapper: {
         flex: 1,
-
         height: '100%',
         alignItems: 'center',
         justifyContent: 'center'
