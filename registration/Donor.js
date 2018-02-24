@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, TouchableHighlight, Picker, TextInput } from 'react-native';
+import { StyleSheet, Text, View, TouchableHighlight, Picker } from 'react-native';
+import { Item, Input } from 'native-base';
 
 class Donor extends Component {
 
@@ -20,11 +21,14 @@ class Donor extends Component {
 
                 <View style={{ alignSelf:"flex-start", marginLeft: 45, flexDirection: 'row'}}>
                     <Text style={styles.txt}>Phone</Text>
-                    <TextInput
+                    <Item style={styles.input}>
+                        <Input placeholder='ex: +92 300-1234567' />
+                    </Item>
+                    {/* <TextInput
                             style={styles.input}
                             placeholder="ex: +92300-1234567"
                             placeholderTextColor='#2C3E50'
-                            selectionColor='#666666' />
+                            selectionColor='#666666' /> */}
                 </View>
 
                 <TouchableHighlight style={styles.btn}>
@@ -50,7 +54,7 @@ const styles = StyleSheet.create({
         marginLeft: 10
       },
       txt: {
-          marginTop: 4
+          marginTop: 18
       },
       btn: {
         alignItems: 'center',
