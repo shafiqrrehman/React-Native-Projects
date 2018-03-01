@@ -56,7 +56,9 @@ export default class App extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1
+    flex: 1,
+    margin: 20,
+    marginTop: 30
   },
   layout: {
     flex: 1,
